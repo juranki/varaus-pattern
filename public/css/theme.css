@@ -1,0 +1,26 @@
+:root {
+    --varaus-text-xxs: 0.75rem;
+    --varaus-text-xs: 0.81rem;
+    --varaus-text-sm: 0.875rem;
+    --varaus-text-md: 1rem;
+    --varaus-text-lg: 1.5rem;
+    --varaus-text-xl: 2rem;
+    --varaus-text-xxl: 2.5rem;
+    --varaus-primary-color: #ff9900;
+    --varaus-primary-contrast: var(--varaus-white);
+    --varaus-primary-tint: #ffac31;
+    --varaus-primary-shade: #e88b01;
+    --varaus-secondary-color: #305e83;
+    --varaus-secondary-contrast: var(--varaus-white);
+    --varaus-secondary-tint: #547aaa;
+    --varaus-secondary-shade: rgb(42, 68, 100);
+    --varaus-tertiary-color: #5d8aff;
+    --varaus-tertiary-contrast: var(--varaus-white);
+    --varaus-tertiary-tint: #7da1ff;
+    --varaus-tertiary-shade: #537BE5;
+    --varaus-grey: #828282;
+    --varaus-light-grey: #c4c4c4;
+    --varaus-white: #ffffff;
+    --varaus-red: #dd3f5b;
+    --varaus-green: #3d6e31;
+}
