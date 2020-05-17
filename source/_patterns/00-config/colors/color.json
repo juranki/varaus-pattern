@@ -1,0 +1,21 @@
+{
+    "colorName": [
+        "--varaus-primary-color",
+        "--varaus-primary-contrast",
+        "--varaus-primary-tint",
+        "--varaus-primary-shade",
+        "--varaus-secondary-color",
+        "--varaus-secondary-contrast",
+        "--varaus-secondary-tint",
+        "--varaus-secondary-shade",
+        "--varaus-tertiary-color",
+        "--varaus-tertiary-contrast",
+        "--varaus-tertiary-tint",
+        "--varaus-tertiary-shade",
+        "--varaus-grey",
+        "--varaus-light-grey",
+        "--varaus-white",
+        "--varaus-red",
+        "--varaus-green"
+    ]
+}

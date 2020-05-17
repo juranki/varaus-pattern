@@ -1,0 +1,11 @@
+div.color-slab {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #333;
+    border-radius: .3rem;
+}
+
+div.color-sample {
+    display: flex;
+    flex-direction: row;
+}

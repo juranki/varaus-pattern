@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <tr>
+            <th>Size sample</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each sizes}}
+        <tr>
+            <td style="font-size: var({{.}});">Sample text in size {{.}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

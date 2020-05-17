@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>CSS Variable</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each colorName}}
+        <tr>
+            <td>{{.}}</td>
+            <td style="background-color: var({{.}});"></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

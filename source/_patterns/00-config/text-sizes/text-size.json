@@ -1,0 +1,11 @@
+{
+    "sizes": [
+        "--varaus-text-xxs",
+        "--varaus-text-xs",
+        "--varaus-text-sm",
+        "--varaus-text-md",
+        "--varaus-text-lg",
+        "--varaus-text-xl",
+        "--varaus-text-xxl"
+    ]
+}
