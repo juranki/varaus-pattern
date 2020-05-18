@@ -1,0 +1,1 @@
+import{r as s,h as r,H as a}from"./p-180ce8bb.js";import{s as o}from"./p-bb6aeaee.js";const t=class{constructor(r){s(this,r)}render(){return r(a,null,o[this.icon])}};t.style=":host{display:inline}";export{t as varaus_icon}

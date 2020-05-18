@@ -1,5 +1,5 @@
 import { r as registerInstance, c as createEvent, h } from './index-43543585.js';
-import { g as getIcon } from './Icons-bf34d518.js';
+import { g as getIcon } from './Icons-71885aab.js';
 
 const validations = {
     required: (s) => (!s ? 'requiredField' : null),

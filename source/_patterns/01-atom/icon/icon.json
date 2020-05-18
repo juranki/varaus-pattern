@@ -6,6 +6,8 @@
         "at",
         "user",
         "lock",
-        "unlock"
+        "unlock",
+        "calendar",
+        "spinner"
     ]
 }

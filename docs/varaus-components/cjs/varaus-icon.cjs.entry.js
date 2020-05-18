@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 const index = require('./index-24347413.js');
-const Icons = require('./Icons-e824cfa2.js');
+const Icons = require('./Icons-f538cf0d.js');
 
 const varausIconCss = ":host{display:inline}";
 

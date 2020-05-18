@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 const index = require('./index-24347413.js');
-const Icons = require('./Icons-e824cfa2.js');
+const Icons = require('./Icons-f538cf0d.js');
 
 const varausButtonCss = ":host{display:block}*{-webkit-box-sizing:border-box;box-sizing:border-box}button{border:1px solid transparent;margin:2px;cursor:pointer;-webkit-transition:.1s ease;transition:.1s ease;font-weight:600;letter-spacing:.05rem;padding:.7rem 1rem;border-radius:.2rem;color:var(--varaus-primary-contrast);background-color:var(--varaus-primary-color);font-size:var(--varaus-text-md);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}button div{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0px .3rem;line-height:var(--varaus-text-lg)}button svg{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0px .3rem;height:var(--varaus-text-lg)}button:hover{background-color:var(--varaus-primary-shade)}button:active{-webkit-transform:translate(1px, 1px);transform:translate(1px, 1px)}button:focus{outline:none;border:1px solid var(--varaus-secondary-color)}";
 

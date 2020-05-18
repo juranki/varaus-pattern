@@ -42,7 +42,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     return r;
 };
 import { r as registerInstance, c as createEvent, h } from './index-43543585.js';
-import { g as getIcon } from './Icons-bf34d518.js';
+import { g as getIcon } from './Icons-71885aab.js';
 var validations = {
     required: function (s) { return (!s ? 'requiredField' : null); },
     email: function (s) { return (/\S+@\S+\.\S+/.test(s) ? null : 'invalidEmail'); }

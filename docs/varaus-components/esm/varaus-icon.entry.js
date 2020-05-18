@@ -1,5 +1,5 @@
 import { r as registerInstance, h, H as Host } from './index-43543585.js';
-import { s as svgs } from './Icons-bf34d518.js';
+import { s as svgs } from './Icons-71885aab.js';
 
 const varausIconCss = ":host{display:inline}";
 

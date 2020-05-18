@@ -31,9 +31,9 @@ export const svgs = Object.freeze({
         h("line", { x1: "3", y1: "10", x2: "21", y2: "10" })),
     spinner: h("svg", { width: "24", height: "24", viewBox: "0 0 38 38", xmlns: "http://www.w3.org/2000/svg", stroke: "currentColor" },
         h("g", { fill: "none", "fill-rule": "evenodd" },
-            h("g", { transform: "translate(1 1)", "stroke-width": "3" },
-                h("circle", { "stroke-opacity": ".5", cx: "18", cy: "18", r: "18" }),
-                h("path", { d: "M36 18c0-9.94-8.06-18-18-18" },
+            h("g", { transform: "translate(1 1)", "stroke-width": "4" },
+                h("circle", { "stroke-opacity": ".3", cx: "18", cy: "18", r: "16" }),
+                h("path", { d: "M 34 18 c 0 -9.5 -6.5 -16 -16 -16" },
                     h("animateTransform", { attributeName: "transform", type: "rotate", from: "0 18 18", to: "360 18 18", dur: "1s", repeatCount: "indefinite" }))))),
 });
 export function getIcon(name) {
