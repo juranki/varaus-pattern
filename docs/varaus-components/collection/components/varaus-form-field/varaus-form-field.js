@@ -10,7 +10,7 @@ export class VarausFormField {
                 h("label", { htmlFor: this.name }, this.label),
                 h("div", { class: "input-wrap" },
                     this.icon && getIcon(this.icon),
-                    h("input", { disabled: this.disabled, type: this.type, name: "email", value: this.value, placeholder: this.placeholder, onChange: evt => {
+                    h("input", { disabled: this.disabled, type: this.type, name: "email", value: this.value, placeholder: this.placeholder, onKeyUp: evt => {
                             const el = evt.currentTarget;
                             this.changed.emit({
                                 name: this.name,

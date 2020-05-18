@@ -1,5 +1,10 @@
-import { ComponentInterface } from '../../stencil-public-runtime';
+import { ComponentInterface, EventEmitter } from '../../stencil-public-runtime';
 import { Changed } from '../varaus-form-field/varaus-form-field';
+export interface SignInAction {
+    username?: string;
+    password?: string;
+    federationProvider?: string;
+}
 export declare class VarausSignInForm implements ComponentInterface {
     email: string;
     password: string;
@@ -8,15 +13,15 @@ export declare class VarausSignInForm implements ComponentInterface {
     loading: boolean;
     error: string;
     success: string;
-    action: (email: string, password: string) => void;
-    federatedAction: (provider: 'google' | 'facebook') => void;
+    signedin: EventEmitter<SignInAction>;
     fieldValidations: {
         email: import("../../services/Validate").Validation[];
         password: import("../../services/Validate").Validation[];
     };
-    validateField(field: string): void;
+    validateField(field: string): boolean;
     validateAll(): boolean;
     submit(evt: Event): Promise<void>;
+    federatedAction(e: MouseEvent, federationProvider: string): void;
     handleChange(evt: CustomEvent<Changed>): void;
     render(): any;
 }

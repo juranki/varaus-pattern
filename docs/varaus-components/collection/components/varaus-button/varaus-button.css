@@ -5,7 +5,8 @@
 * {box-sizing: border-box;}
 
 button {
-  margin: 0.3rem;
+  border: 1px solid transparent;
+  margin: 2px;
   cursor: pointer;
   transition: .1s ease;
   font-weight: 600;
@@ -14,7 +15,6 @@ button {
   border-radius: .2rem;
   color: var(--varaus-primary-contrast);
   background-color: var(--varaus-primary-color);
-  border: none;
   font-size: var(--varaus-text-md);
   display: flex;
   align-items: center;
@@ -39,4 +39,5 @@ button:active {
 
 button:focus {
   outline: none;
+  border: 1px solid var(--varaus-secondary-color);
 }

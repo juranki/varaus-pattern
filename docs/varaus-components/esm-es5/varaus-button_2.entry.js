@@ -1,6 +1,6 @@
-import { r as registerInstance, h, H as Host, c as createEvent } from './index-43543585.js';
+import { r as registerInstance, h, c as createEvent, H as Host } from './index-43543585.js';
 import { g as getIcon } from './Icons-bf34d518.js';
-var varausButtonCss = ":host{display:block}*{-webkit-box-sizing:border-box;box-sizing:border-box}button{margin:0.3rem;cursor:pointer;-webkit-transition:.1s ease;transition:.1s ease;font-weight:600;letter-spacing:.05rem;padding:.7rem 1rem;border-radius:.2rem;color:var(--varaus-primary-contrast);background-color:var(--varaus-primary-color);border:none;font-size:var(--varaus-text-md);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}button div{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0px .3rem;line-height:var(--varaus-text-lg)}button svg{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0px .3rem;height:var(--varaus-text-lg)}button:hover{background-color:var(--varaus-primary-shade)}button:active{-webkit-transform:translate(1px, 1px);transform:translate(1px, 1px)}button:focus{outline:none}";
+var varausButtonCss = ":host{display:block}*{-webkit-box-sizing:border-box;box-sizing:border-box}button{border:1px solid transparent;margin:2px;cursor:pointer;-webkit-transition:.1s ease;transition:.1s ease;font-weight:600;letter-spacing:.05rem;padding:.7rem 1rem;border-radius:.2rem;color:var(--varaus-primary-contrast);background-color:var(--varaus-primary-color);font-size:var(--varaus-text-md);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}button div{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0px .3rem;line-height:var(--varaus-text-lg)}button svg{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0px .3rem;height:var(--varaus-text-lg)}button:hover{background-color:var(--varaus-primary-shade)}button:active{-webkit-transform:translate(1px, 1px);transform:translate(1px, 1px)}button:focus{outline:none;border:1px solid var(--varaus-secondary-color)}";
 var VarausButton = /** @class */ (function () {
     function VarausButton(hostRef) {
         registerInstance(this, hostRef);
@@ -8,7 +8,7 @@ var VarausButton = /** @class */ (function () {
         this.type = 'button';
     }
     VarausButton.prototype.render = function () {
-        return (h(Host, null, h("button", { type: this.type, onClick: this.action }, this.icon && getIcon(this.icon), h("div", null, h("slot", null)))));
+        return (h("button", { type: this.type }, this.icon && getIcon(this.icon), h("div", null, h("slot", null))));
     };
     return VarausButton;
 }());
@@ -22,7 +22,7 @@ var VarausFormField = /** @class */ (function () {
     }
     VarausFormField.prototype.render = function () {
         var _this = this;
-        return (h(Host, null, h("div", { class: "form-row" }, h("label", { htmlFor: this.name }, this.label), h("div", { class: "input-wrap" }, this.icon && getIcon(this.icon), h("input", { disabled: this.disabled, type: this.type, name: "email", value: this.value, placeholder: this.placeholder, onChange: function (evt) {
+        return (h(Host, null, h("div", { class: "form-row" }, h("label", { htmlFor: this.name }, this.label), h("div", { class: "input-wrap" }, this.icon && getIcon(this.icon), h("input", { disabled: this.disabled, type: this.type, name: "email", value: this.value, placeholder: this.placeholder, onKeyUp: function (evt) {
                 var el = evt.currentTarget;
                 _this.changed.emit({
                     name: _this.name,

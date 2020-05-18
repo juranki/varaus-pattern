@@ -1,3 +1,9 @@
 <div style="max-width: 30rem;border: 1px solid grey; border-radius: .5rem; padding: 1rem;">
-    <varaus-sign-in-form></varaus-sign-in-form>
+    <varaus-sign-in-form id="sign-in-form"></varaus-sign-in-form>
 </div>
+
+<script>
+    document.getElementById('sign-in-form').addEventListener('signedin', (e) => {
+        console.log(e)
+    })
+</script>

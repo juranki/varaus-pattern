@@ -7,9 +7,9 @@
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
 import { IconName, } from "./components/varaus-icon/Icons";
 import { Changed, } from "./components/varaus-form-field/varaus-form-field";
+import { SignInAction, } from "./components/varaus-sign-in-form/varaus-sign-in-form";
 export namespace Components {
     interface VarausButton {
-        "action"?: () => void;
         "disabled": boolean;
         "icon"?: IconName;
         "type": "submit" | "button" | "reset";
@@ -28,9 +28,7 @@ export namespace Components {
         "icon": IconName;
     }
     interface VarausSignInForm {
-        "action": (email: string, password: string) => void;
         "error": string;
-        "federatedAction": (provider: "google" | "facebook") => void;
         "success": string;
     }
 }
@@ -68,7 +66,6 @@ declare global {
 }
 declare namespace LocalJSX {
     interface VarausButton {
-        "action"?: () => void;
         "disabled"?: boolean;
         "icon"?: IconName;
         "type"?: "submit" | "button" | "reset";
@@ -88,9 +85,8 @@ declare namespace LocalJSX {
         "icon"?: IconName;
     }
     interface VarausSignInForm {
-        "action"?: (email: string, password: string) => void;
         "error"?: string;
-        "federatedAction"?: (provider: "google" | "facebook") => void;
+        "onSignedin"?: (event: CustomEvent<SignInAction>) => void;
         "success"?: string;
     }
     interface IntrinsicElements {

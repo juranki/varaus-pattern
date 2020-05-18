@@ -4,6 +4,5 @@ export declare class VarausButton implements ComponentInterface {
     disabled: boolean;
     type: 'submit' | 'button' | 'reset';
     icon?: IconName;
-    action?: () => void;
     render(): any;
 }
