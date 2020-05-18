@@ -10,7 +10,7 @@
     "pl:install": "patternlab install --config ./patternlab-config.json",
     "pl:serve": "patternlab serve --config ./patternlab-config.json",
     "pl:version": "patternlab --version",
-    "publish": "rm -rf docs && cp -Lr public/ docs"
+    "publish": "rm -rf docs && cp -Lr public/ docs && cp source/CNAME docs"
   },
   "keywords": [],
   "author": "",
